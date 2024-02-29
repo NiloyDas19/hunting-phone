@@ -20,7 +20,7 @@ const displayPhones = phones => {
         console.log(phone);
         // 2. Create a div
         const phoneCard = document.createElement('div');
-        phoneCard.classList = `card w-full md:w-96 lg:w-80 bg-base-100 shadow-xl`;
+        phoneCard.classList = `card p-4 bg-base-100 shadow-xl`;
 
         // 3.set inner HTML
         phoneCard.innerHTML = `
