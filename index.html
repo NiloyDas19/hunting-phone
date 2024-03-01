@@ -17,15 +17,27 @@
 
     </header>
     <main class="container mx-auto mt-8">
+        
         <section class="bg-gray-100 p-4 m-4 text-center">
-            <input type="text" placeholder="Search...." class="input input-bordered w-1/2" />
-            <button class="btn btn-primary">Search</button>
+            <input id="search-field" type="text" placeholder="Search...." class="input input-bordered w-1/2" />
+            <button class="btn btn-primary" onclick="handelSearch()">Search</button>
         </section>
 
+        
         <section class="">
+            <!-- Spinner or Loader -->
+            <div id="loading-spinner" class="text-center hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+
             <!-- Phone Container -->
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center">
 
+            </div>
+
+            <!-- show all button -->
+            <div id="show-all-container" class="text-center hidden mt-4">
+                <button class="btn btn-primary" onclick="">Show ALL</button>
             </div>
         </section>
     </main>
