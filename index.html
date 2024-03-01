@@ -17,13 +17,13 @@
 
     </header>
     <main class="container mx-auto mt-8">
-        
+
         <section class="bg-gray-100 p-4 m-4 text-center">
             <input id="search-field" type="text" placeholder="Search...." class="input input-bordered w-1/2" />
             <button class="btn btn-primary" onclick="handelSearch()">Search</button>
         </section>
 
-        
+
         <section class="">
             <!-- Spinner or Loader -->
             <div id="loading-spinner" class="text-center hidden">
@@ -40,6 +40,33 @@
                 <button class="btn btn-primary" onclick="handleShowAll()">Show ALL</button>
             </div>
         </section>
+
+
+        <!-- show details modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal">
+            <div class="modal-box">
+                <figure id="phone-image"></figure>
+                <h3 class="font-bold text-lg" id="phone-name">Hello!</h3>
+                <p class="py-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <p>Storage :<span id="phone-storage"></span></p>
+                <p>Display Size :<span id="phone-display-size"></span></p>
+                <p>Chipset :<span id="phone-chipset"></span></p>
+                <p>Memory :<span id="phone-memory"></span></p>
+                <p>Slug :<span id="phone-slug"></span></p>
+                <p>Release Data :<span id="phone-release-date"></span></p>
+                <p>Brand :<span id="phone-brand"></span></p>
+                <p>Gps :<span id="phone-gps">NO</span></p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-error">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+
+
     </main>
     <footer>
 
